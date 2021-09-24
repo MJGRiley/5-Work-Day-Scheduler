@@ -3,8 +3,8 @@ var rightNow = moment().format("H")
 var saveIcon = $('i')
 var textArea = $('textarea')
 var uInput = []
-
-saveIcon.on('click',pushStorage)
+//adds a click listener for all of the saveIcon elements
+saveIcon.on('click', pushStorage)
 
 textArea.each(function(i){
     if (rightNow > i+9) {$(this).addClass('past')}
@@ -15,8 +15,20 @@ textArea.each(function(i){
 function pushStorage() {
     $(this).parent().siblings('textarea').each(function(i){
         uInput[i] = $(this).val()
-        //add push to local storage here
+        localStorage.setItem('userInput',JSON.stringify(uInput))
     })
 }
 
-//add check for local storage when page loads "init"
+$(document).ready(function () {
+    var getCheck = JSON.parse(localStorage.getItem('userInput'))
+    if (!getCheck) {
+        console.log('No data for this site stored on local storage.')
+        return
+    } else {
+        for(i=0;i<getCheck.length;i++){
+        //getCheck.each(function(i){ //I don't understand why this doesn't work
+            textArea[i].value = getCheck[i]
+        } 
+    }
+
+})
