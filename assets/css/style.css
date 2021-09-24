@@ -1,0 +1,117 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+
+textarea {
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+
+.time-block {
+  text-align: center;
+  border-radius: 15px;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+  text-align: center;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future {
+  background-color: #77dd77;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+  font-size:x-large;
+  text-align: center;
+}
+
+i {
+  margin-top: 17px;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+  
+.div1 { grid-area: 1 / 2 / 2 / 3; }
+.div2 { grid-area: 1 / 3 / 2 / 11; }
+.div3 { grid-area: 1 / 11 / 2 / 12; }
+.div4 { grid-area: 2 / 2 / 3 / 3; }
+.div5 { grid-area: 2 / 3 / 3 / 11; }
+.div6 { grid-area: 2 / 11 / 3 / 12; }
+.div7 { grid-area: 3 / 2 / 4 / 3; }
+.div8 { grid-area: 3 / 3 / 4 / 11; }
+.div9 { grid-area: 3 / 11 / 4 / 12; }
+.div10 { grid-area: 4 / 2 / 5 / 3; }
+.div11 { grid-area: 4 / 3 / 5 / 11; }
+.div12 { grid-area: 4 / 11 / 5 / 12; }
+.div13 { grid-area: 5 / 2 / 6 / 3; }
+.div14 { grid-area: 5 / 3 / 6 / 11; }
+.div15 { grid-area: 5 / 11 / 6 / 12; }
+.div16 { grid-area: 6 / 2 / 7 / 3; }
+.div17 { grid-area: 6 / 3 / 7 / 11; }
+.div18 { grid-area: 6 / 11 / 7 / 12; }
+.div19 { grid-area: 7 / 2 / 8 / 3; }
+.div20 { grid-area: 7 / 3 / 8 / 11; }
+.div21 { grid-area: 7 / 11 / 8 / 12; }
+.div22 { grid-area: 8 / 2 / 9 / 3; }
+.div23 { grid-area: 8 / 3 / 9 / 11; }
+.div24 { grid-area: 8 / 11 / 9 / 12; }
+.div25 { grid-area: 9 / 2 / 10 / 3; }
+.div26 { grid-area: 9 / 3 / 10 / 11; }
+.div27 { grid-area: 9 / 11 / 10 / 12; }
+.div28 { grid-area: 10 / 2 / 11 / 3; }
+.div29 { grid-area: 10 / 3 / 11 / 11; }
+.div30 { grid-area: 10 / 11 / 11 / 12; }
