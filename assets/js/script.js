@@ -2,12 +2,18 @@
 var rightNow = moment().format("H")
 var saveIcon = $('i')
 var textArea = $('textarea')
-
-console.log(saveIcon)
-console.log(textArea)
+var uInput = []
 
 saveIcon.each(function(i){
-    saveIcon[i]
+    console.log(i)
+    //adds event listener to each saveIcon
+    var input = textArea[i]
+    console.log(input)
+    $(this).click( function(i){//This adds a listener to each saveIcon buttons
+        // and I want it to dynamically select the textArea, but it will only 
+        // select the first 
+        if(!temp){localStorage.setItem('hour'+i,JSON.stringify(textArea.val()))}
+    })
 })
 
 textArea.each(function(i){
@@ -15,8 +21,3 @@ textArea.each(function(i){
     if (rightNow == i+9) {$(this).addClass('present')}
     if (rightNow < i+9) {$(this).addClass('future')}
 })
-//adds event listener to each saveIcon
-
-function storeLocally () {
-   // localStorage.setItem('hour'+ hour, JSON.stringify(saveIcon[*]))
-}
